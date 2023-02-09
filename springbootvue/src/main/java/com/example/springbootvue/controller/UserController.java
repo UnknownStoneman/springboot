@@ -28,7 +28,7 @@ public class UserController {
 //        System.out.println(userPageInfo);
         return new Result(200,userPageInfo);
     }
-
+//test
     @GetMapping("/getByPage")
     public Result getBypage(@RequestParam int pageSize,@RequestParam int currentPage){
         PageHelper.startPage(currentPage,pageSize);
